@@ -46,7 +46,7 @@ function checkAcount() {
     var pass = $("#login-password").val();
 
     /* Check Here */
-    var check = KiemTraTaiKhoan(id);
+    var check = KiemTraTaiKhoan(id,pass);
     if (check === 1) {
         alert("Accepted");
     } else if (check === 2) {
@@ -77,7 +77,7 @@ function createAccount() {
     } else if (pass !== confirm) {
         alert("Xác nhận mật khẩu không đúng");
     } else {
-        if (KiemTraTaiKhoan(email) !== 3) {
+        if (KiemTraTaiKhoan(email,pass) !== 3) {
             alert("That username is taken. Try another.");
         } else {
             dem++;
