@@ -48,9 +48,8 @@
                             <input class="form-control" type="number" name="phone" id="phone" placeholder="Phone">
                         </div>
                         <div class="row form-group">
-                            <button type="button" class="btn btn-primary" onclick="setCookie()">Sign in</button>
+                            <button type="button" class="btn btn-primary" onclick="createAccount()">Sign in</button>
                         </div>
-                        <button type="button" onclick="getCookie()">get Cookie</button>
                     </form>
                 </div>
             </div>
@@ -70,13 +69,13 @@
                     <img src="images/vodanh.jpg">
                 </div>
                 <div class="row">
-                    <input type="text" name="id" placeholder="Email adress">
+                    <input type="text" name="id" id="id" placeholder="Email adress">
                 </div>
                 <div class="row">
-                    <input type="password" name="password" placeholder="Password">
+                    <input type="password" name="password" id="login-password" placeholder="Password">
                 </div>
                 <div class="row">
-                    <button class="btn btn-primary" type="button">LOG IN
+                    <button class="btn btn-primary" type="button" onclick="checkAcount()">LOG IN
                 </button>
                 </div>
             </form>
