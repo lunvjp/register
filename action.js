@@ -33,7 +33,24 @@ function KiemTraTaiKhoan(id, pass) {
 }
 
 function checkAcount() {
-    /* Hàm tạo thời gian cho cookie */
+    var id = $("#id").val();
+    var pass = $("#login-password").val();
+
+    /* Check Here */
+    var check = KiemTraTaiKhoan(id,pass);
+    if (check === 1) {
+        alert("Accepted");
+        
+        
+        
+    } else if (check === 2) {
+        alert("Wrong password!");
+    } else {
+        alert("Account doesn't exist!");
+    }
+}
+
+/* Hàm tạo thời gian cho cookie */
     /* function loginAcount(id,pass,days) {
         
         var day = new Date();
@@ -42,20 +59,6 @@ function checkAcount() {
 
         document.cookie=id+"="+pass+","+"Expires:="+expires;
     */
-    var id = $("#id").val();
-    var pass = $("#login-password").val();
-
-    /* Check Here */
-    var check = KiemTraTaiKhoan(id,pass);
-    if (check === 1) {
-        alert("Accepted");
-    } else if (check === 2) {
-        alert("Wrong password!");
-    } else {
-        alert("Account doesn't exist!");
-    }
-}
-
 function createAccount() {
     var firstName = $("#firstname").val();
     var lastName = $("#lastname").val();
