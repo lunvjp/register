@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create your Account</title>
+    <meta charset="utf-8">
+    <meta name="author" content="LunVjp">
+    <meta name="description" content="This is Register's Form">
+    <meta name="keywords" content="account,id,pass,name">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="action.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png">
+    </header>
+    <div class="container">
+        <div class="col-sm-12">
+            <div class="main">
+                <div class="login">
+                    <h5>Already have an account? <span id="log" onclick="displayLogin()">Log in.</span></h5>
+                </div>
+                <div class="register">
+                    <h2>Sign in</h2>
+                    <form method="post" name="ID">
+                        <div class="row form-group">
+                            <input class="form-control" type="text" name="firstname" id="firstname" placeholder="First Name">
+                        </div>
+                        <div class="row form-group">
+                            <input class="form-control" type="text" name="lastname" id="lastname" placeholder="Last Name">
+                        </div>
+                        <div class="row form-group">
+                            <input class="form-control" type="email" name="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="row form-group">
+                            <input class="form-control" type="password" name="password" id="password" placeholder="Password">
+                        </div>
+                        <div class="row form-group">
+                            <input class="form-control" type="password" name="confirm" id="confirm" placeholder="Confirm Password">
+                        </div>
+                        <div class="row form-group">
+                            <input class="form-control" type="number" name="phone" id="phone" placeholder="Phone">
+                        </div>
+                        <div class="row form-group">
+                            <button type="button" class="btn btn-primary" onclick="setCookie()">Sign in</button>
+                        </div>
+                        <button type="button" onclick="getCookie()">get Cookie</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>©2017 LunVjp</p>
+    </footer>
+
+    <div class="login-scene">
+        <div class="login-container">
+            <span class="close" onclick="closeLogin()"><i class="fa fa-times" aria-hidden="true"></i></span>
+            <form id="login-form">
+                <div class="avatar">
+                    <img src="images/vodanh.jpg">
+                </div>
+                <div class="row">
+                    <input type="text" name="id" placeholder="Email adress">
+                </div>
+                <div class="row">
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+                <div class="row">
+                    <button class="btn btn-primary" type="button">LOG IN
+                </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="action.js"></script>
+</body>
+
+</html>
